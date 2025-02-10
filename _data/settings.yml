@@ -48,7 +48,7 @@ social:
 # About (Section and Page)
 
 # About Section
-blurb: 저는 느린 사람입니다. 먹는 속도도 느리고, 군대도 늦게 갔고, 코딩도 늦게 접했습니다.  <br> 이런 말이 있죠. <br><br> "바람에 흔들리는 갈대도 결국 뿌리를 단단히 내리고 살아간다. 느리지만, 확실하게." <br> 저는 하고 싶은 일과 의미 있다고 생각하는 일에는 실행에 주저하지 않고, 될 때까지 끝까지 파고듭니다.
+blurb: 저는 느린 사람입니다. 먹는 속도도 느리고, 군대도 늦게 갔고, 코딩도 늦게 접했습니다.  <br> <br>이런 말이 있죠. <br><br> "바람에 흔들리는 갈대도 결국 뿌리를 단단히 내리고 살아간다. 느리지만, 확실하게." <br> 저는 하고 싶은 일과 의미 있다고 생각하는 일에는 실행에 주저하지 않고, 될 때까지 끝까지 파고듭니다.
  
 blurb-btn-link: "/about"
 blurb-btn-name: know more
@@ -61,7 +61,7 @@ work-process:
     icon: "assets/images/icons/plan.png"
     content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 
-  - title: "Design and Develop"
+  - title: "Study and Develop"
     icon: "assets/images/icons/design.png"
     content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 
@@ -71,17 +71,17 @@ work-process:
 
 # My Team Section
 team:
-  - title: "Jack Schenziwe"
-    image: "assets/images/team/member-1.png"
-    designation: "Project Manager"
+  - title: "Pen"
+    image: "Pen.png"
+    designation: "The canvas of mathmatical Ideas"
 
-  - title: "Julias Carlie"
-    image: "assets/images/team/member-2.png"
-    designation: "Web Developer"
+  - title: "Laptop"
+    image: "laptop.png"
+    designation: "Realization of imagination"
 
-  - title: "John Doe"
+  - title: "Chat GPT"
     image: "assets/images/team/member-3.png"
-    designation: "Designer"
+    designation: "The best intellectual partner"
 
 #-------------------------------
 # Skills Section
