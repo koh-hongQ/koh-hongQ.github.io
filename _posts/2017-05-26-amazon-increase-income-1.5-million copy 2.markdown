@@ -1,18 +1,35 @@
 ---
 layout: post
-title:  Amazon increase income 1.5 Million
-date:   2017-05-26 15:05:55 +0300
-image:  /assets/images/blog/post-5.jpg
-author: uixgeek
-tags:   UX design
+title:  Making AI Chatbot Project
+date:   2025.01 ~ 2025.02
+image:  chatbot.png
+author: Hongkyu Koh
+tags:   AI
 ---
 
-**Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.**
+**지역 현안에 대한 해결방안을 제시하는 주제에 맞게 동대문구 치안문제 해결을 위해 안전경로 챗봇인 길동이에 대해 소개하겠습니다. 지역사회 문제인 치안과 저희 팀이 개발한 안전경로 추천 챗봇인 길동이를 소개하겠습니다. 그 후 저희가 사용했던 챗봇소스 코드를 알아보겠습니다. 치안문제는 (next) 여러 기사를 통해 알 수 있습니다. 동대문구의 강력범죄는 서울특별시 25개 자치구 중 13번째로 높았습니다. 대학생을 대상으로 한 설문조사에서 거주하는 곳 주변의 치안 정도를 5점 만점 중 3점 이하로 꼽았으며 그 이유로는 어두운 길이 62.3%로 2위를 차지했습니다. 이에 저희 팀은 챗봇을 활용해 해결 가능한 치안 솔루션을 도출했습니다. 일반적인 지도는 안전한지 여부와 상관없이 최단경로를 추천하곤 합니다. 경찰청과 건축도시공간연구소에 따르면, 가로등-보안등만 설치해도 범죄가 16% 줄어든다고 합니다. 
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.
+요약하자면, 기존의 지도 앱의 경로추천을 따라가면 위험한 거리가 나올 수 있다는 문제점을 인식해, (next)가로등과 보안등이 많은 길 위주로 (next) 안전경로를 추천하는 길동이를 개발하였습니다. 
+**
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+두 번째로 길동이의 구성에 대해 자세히 알아보겠습니다. 길동이의 구조를 자세히 알아보자면, 먼저 오픈ai api를 호출해서 길동이의 초기설정을 합니다. 메시지의 content라는 곳에 길동이가 어떤 챗봇인지 설정을 합니다. (next)사용자는 ‘도로명주소’로 출발지,도착지를 입력하며, ai는 입력에 따라 봇리스판스 라는 변수에 입력된 출발지와 도착지 사이의 안전경로를 저장합니다. 이 봇리스판스가 가장 중요한데요.  길동이의 초기설정에 따라 봇리스판스 값이 달라지기 때문입니다. 봇리스판스를 토대로 , 두 지점의 최단경로를 지도에 출력하고, 가로등과 보안등 데이터 API를 호출해서 , 분석한 후, 안전 경로와 안전 등급을 출력하는 것이 길동이의 기능입니다. 
 
-> Dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+이제 단계별로 길동이를 만들어보겠습니다. 먼저 팀원의 역할을 나누고, 길동이의 구조를 쪼개서 5단계로 나눠, 작은 기능부터 완성해갔씁니다. 또한 지도연결알고리즘, 안전등급, 프롬프트 등,  중간중간 피드백을 주고 방향성을 잡았습니다. 입력하는 주소는 도로명 주소를 기준으로했습니다.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+첫번째 단계로 API를 호출하는 것입니다. 가장 중요한 OpenAi API를 호출했고, 공공데이터센터에서 동대문구의 보안등과 가로등 데이터를 호출했습니다. 
+가로등과 보안등 API를 호출하는 방식이 까다로웠는데요, 이와 같이 GPT와 소통하며 문제를 해결해나갔씁니다. 
+
+두번째 단계로 길동이의 초기설정을 정하는 것입니다. 이는 OpenAI의 기본 챗봇 코드 중 메시지의 콘텐트 부분에 문자열로 직접 정하는 것인데요. 이와 같이 출발지와 목적지 사이의 안전한 주소를 알려주고, 뒤에 경도와 위도까지 출력하는 형식으로 정했습니다. 
+이렇게 프롬프트를 수정해나갔구요,
+
+세번째 단계로 동대문구 지도에 출발지와 도착지의 최단경로를 표시하는 것입니다. 봇리스판스가 출력한 문자열 속, 콤마로 구분된 마지막 4개의 자료는 좌표를 나타냅니다. Osmnx라이브러리를 불러와서 좌표를 대입하는 코드를 만들어, 지도위에 최단경로를 표기합니다. 
+이런식으로 지도코드를 다듬었습니다.
+
+네번째 단계로 가로등과 보안등 데이터를 기반으로 안전등급을 표시하는 것입니다. 가로등 데이터는 따로 분석을 해서, ‘1km당 가로등의 개수를 기준’으로 순위퍼센트와 안전등급을 매겼습니다. 보안등은 1km당 보안등의 개수를 판단할 수 없어서 가로등을 기준으로 안전 등급을 정했습니다. 따라서 봇리스판스가 만든 안전경로의 모든 주소마다 가로등, 순위퍼센트 , 보안등 개수, 안전등급을 매기는 알고리즘을 짰습니다.  
+이렇게 데이터분석을 했구요, 점차 데이터의 안전 등급이 정교해졌습니다. 
+
+가로등과 보안등의 데이터를 자세히 보면, 이런식으로 1km당 차도등의 개수, 1km당 보행등의 개수가 나타났는데요, 이를 시각화하면 이렇습니다. 진할수록 가로등의 개수가 많습니다. 
+이를 합쳐서 이렇게 4단계로 분리했고, 주소마다 4단계의 안전 등급을 표시해 시각화하면 이렇습니다. 이후 길동이 파이썬 코드 안에 리스트로 저장해 활용했습니다. 
+
+결론적으로, 사용자는 지도 속 최단경로를 따라 목적지로 이동하되, 길동이가 추천해주는 안전 경로와 안전등급을 기준으로 '위험'한 길을 피해 갈 수 있습니다. (next)최단경로와 안전경로를 합쳐서 지도에 표기하거나, 혹은 더 정교한 안전에 대한 데이터, 혹은 전국적인 안전 데이터 등을 활용한다면 , 길동이가 향후에 보편적인 안전경로를 추천하는 안심귀갓길 전용 챗봇이 되어 상용화까지 가능한 날이 오지 않을까 기대해봅니다.
+감사합니다. 
