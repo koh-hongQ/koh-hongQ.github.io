@@ -72,7 +72,7 @@ work-process:
 # My Team Section
 team:
   - title: "Pen"
-    image: "Pen.png"
+    image: "pen.png"
     designation: "The canvas of mathmatical Ideas"
 
   - title: "Laptop"
@@ -80,7 +80,7 @@ team:
     designation: "Realization of imagination"
 
   - title: "Chat GPT"
-    image: "assets/images/team/member-3.png"
+    image: "AI.png"
     designation: "The best intellectual partner"
 
 #-------------------------------

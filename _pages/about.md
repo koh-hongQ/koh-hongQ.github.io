@@ -3,7 +3,7 @@ layout: about
 title: About Me
 author: Hongkyu Koh
 image: me.webp
-signature: sign2.jpg
+signature: sign2.png
 ---
 
 솔직함이란 무엇인가?
