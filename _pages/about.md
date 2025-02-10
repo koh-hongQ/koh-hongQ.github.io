@@ -1,18 +1,89 @@
 ---
 layout: about
 title: About Me
-author: Johnathan Smith
-image: assets/images/about/author.jpg
-signature: assets/images/about/signature.png
+author: Hongkyu Koh
+image: me.webp
+signature: sign.jpg
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat.
+솔직함이란 무엇인가?
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident.
 
-Deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.
+
+
+
+
+
+내 생각을 있는 그대로 말하기란 어려운 일이다.
+
+하고 싶은 말이 상대방, 그리고 속한 그룹에 미칠 영향을 생각해야 한다.
+
+그리고 내가 정말로 그렇게 생각하고 있는지, 그 생각이 옳은지 한 번 더 확인한 이후에야 입 밖으로 낼 수 있다.
+
+그렇게 재고 재다가 결국 시기를 놓쳐 말의 의미와 감정이 퇴색되어 버리는 경우가 많다.
+
+신중함과 대범함 사이에서 적절하게 위치하는 것이 중요하다.
+
+​
+
+진실을 듣고 싶어 하는 사람은 많다. 다들 솔직하게 말해보라고 한다. 
+
+하지만 생각해 볼 거리가 몇 가지 있다.
+
+​
+
+첫째, 모든 면에서, 모든 사람에게 솔직할 필요는 없다. 
+
+거짓은 그것만의 존재가치가 있다. 우리 삶을 더 풍요롭게 하고 불필요한 에너지 소모를 줄여준다. 
+
+어떤 경우엔 "좋은 게 좋은 거다"라는 말이 나름 합리적으로 들린다.
+
+마찬가지로 내가 솔직해야 하는 대상은 애정을 가진, 나와 함께할 미래가 기대되는 사람들이다.
+
+진실을 말할 가치가 없는 사람에겐 진실을 말할 필요가 없다.
+
+​
+
+둘째, 진실을 말했을 때 그 사람이 견딜 수 있을지 생각해 봐야 한다.
+
+충분한 교류를 하기 전 아직 가느다란 실같은 관계는 약간의 충격으로 툭 끊어져 버리는 경우가 있다.
+
+나의 경우에는 가까움의 정도와 관계없이 누군가 나에게 긍정적이든, 부정적이든 솔직하게 말해주면 정말 좋다.
+
+눈치는 내가 가진 장점이 아니기 때문에 솔직하게 이야기하기 전까지 상대방의 생각을 잘 알아채지 못하기 때문이다.
+
+예상과 다른 사실을 마주하게 되면 약간 당황할 수 있지만 상대방을 오히려 더 신뢰하게 된다.
+
+하지만 다른 사람의 경우 처한 상황과 개인의 특성에 따라서 수용도가 다르기 때문에 주의할 필요가 있다.
+
+​
+
+솔직함의 방식도 생각해 볼 필요가 있다.
+
+솔직함과 무례함은 다르다. 의도를 가장 잘 표현하고 상대방의 기분을 상하지 않게 하는 적절한 메시지의 선택이 필요하다.
+
+어떻게 전달하느냐에 따라 동일한 의도를 가졌더라도 상대방에게 다르게 작용할 수 있다.
+
+수영 선수들은 차가운 물에 입수하기 전 가슴에 물을 적신다.
+
+마찬가지로 진실을 전달하기 전에 놀라지 않도록 "솔직하게 말해도 돼?"와 같이 질문의 형식으로 마음의 준비를 하게 한다.
+
+이후 구체적이지만 핵심에서 벗어나지 않게, 가공된 언어로 이야기를 하는 게 베스트 아닐까.
+
+​
+
+타자와의 관계에서뿐 아니라 나 자신에게도 솔직함은 중요하다.
+
+제대로 된 도움을 받으려면 솔직해야 한다. 배우고 싶다면 무지를 드러내야 한다.
+
+단순히 현재의 불쾌한 상황을 회피하기 위한 것인지, 진심으로 그렇게 생각하는지 솔직해져야 한다.
+
+좋든 싫든 현재 내 상황을 바라보고 개선할 방법을 생각해야 한다.
+
+사실 이게 참 어렵다. 누구나 긍정적인 자아상을 유지하려는 본능이 있기 때문이다.
+
+​
+
+솔직하지 않은 시대에서 솔직함은 오히려 매력으로 다가오는 것 같다.
+
+어떤 말들은 꼭 해야 한다. 안 그러면 후회한다. 하고 싶은 말을 할 수 있는 용기를 가지자.
