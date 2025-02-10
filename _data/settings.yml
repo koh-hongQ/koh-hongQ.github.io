@@ -6,9 +6,9 @@ title:  Slow Man
 logo:
 author: 고홍규
 description: this is meta description
-email: steve.fruits@email.com
-phone: +880 2544 658 256
-address: 125/A, CA Commercial Area, California, USA
+email: issackoh@naver.com
+phone: 010 9374 4722
+address: South Korea, Seoul
 copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Getjekyllthemes](https://getjekyllthemes.com)
 
 menu:
@@ -36,20 +36,20 @@ disqus-identifier: # Add your shortname for Disqus Comment. For example mr-brown
 # Hero Section
 
 hero:
-  hero-title: Hi! I’m <br> Christoher <br> UX designer
+  hero-title: Hi! I’m <br> Hongkyu Koh <br> B.S. student <br> in Mathematics, Computer Science 
 
 social:
-  - { icon: "ti-facebook", link: "#" }
-  - { icon: "ti-instagram", link: "#" }
-  - { icon: "ti-dribbble", link: "#" }
-  - { icon: "ti-twitter", link: "#" }
+  - { icon: "ti-facebook", link: "https://www.facebook.com/profile.php?id=100075405215322&locale=ko_KR" }
+  - { icon: "ti-instagram", link: "https://www.instagram.com/hhong_q/" }
+  - { icon: "ti-youtube", link: "https://www.youtube.com/@hhong_q" }
+
 
 #-------------------------------
 # About (Section and Page)
 
 # About Section
-blurb: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-
+blurb: 저는 느린 사람입니다. 먹는 속도도 느리고, 군대도 늦게 갔고, 코딩도 늦게 접했습니다.  <br> 이런 말이 있죠. <br> "바람에 흔들리는 갈대도 결국 뿌리를 단단히 내리고 살아간다. 느리지만, 확실하게." <br> 저는 하고 싶은 일과 의미 있다고 생각하는 일에는 실행에 주저하지 않고, 될 때까지 끝까지 파고듭니다다.
+ 
 blurb-btn-link: "/about"
 blurb-btn-name: know more
 
