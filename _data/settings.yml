@@ -36,7 +36,7 @@ disqus-identifier: # Add your shortname for Disqus Comment. For example mr-brown
 # Hero Section
 
 hero:
-  hero-title: Hi! I’m <br> Hongkyu Koh <br> B.S. student <br> in Mathematics, Computer Science 
+  hero-title: Hi! I’m <br> Hongkyu Koh <br><br> B.S. student <br> in Mathematics 
 
 social:
   - { icon: "ti-facebook", link: "https://www.facebook.com/profile.php?id=100075405215322&locale=ko_KR" }
@@ -48,7 +48,7 @@ social:
 # About (Section and Page)
 
 # About Section
-blurb: 저는 느린 사람입니다. 먹는 속도도 느리고, 군대도 늦게 갔고, 코딩도 늦게 접했습니다.  <br> 이런 말이 있죠. <br> "바람에 흔들리는 갈대도 결국 뿌리를 단단히 내리고 살아간다. 느리지만, 확실하게." <br> 저는 하고 싶은 일과 의미 있다고 생각하는 일에는 실행에 주저하지 않고, 될 때까지 끝까지 파고듭니다다.
+blurb: 저는 느린 사람입니다. 먹는 속도도 느리고, 군대도 늦게 갔고, 코딩도 늦게 접했습니다.  <br> 이런 말이 있죠. <br> "바람에 흔들리는 갈대도 결국 뿌리를 단단히 내리고 살아간다. 느리지만, 확실하게." <br> 저는 하고 싶은 일과 의미 있다고 생각하는 일에는 실행에 주저하지 않고, 될 때까지 끝까지 파고듭니다.
  
 blurb-btn-link: "/about"
 blurb-btn-name: know more
@@ -88,10 +88,10 @@ team:
 
 skills-title: Skills
 skills:
-  - { name: Web Design, color: "#fdb157", value: "90%" }
-  - { name: Logo Design, color: "#9473e6", value: "60%" }
-  - { name: After Effects, color: "#bdecf6", value: "80%" }
-  - { name: Web App, color: "#ffbcaa", value: "70%" }
+  - { name: Mathematics, color: "#fdb157", value: "60%" }
+  - { name: Python, color: "#9473e6", value: "70%" }
+  - { name: Statistics, color: "#bdecf6", value: "80%" }
+  - { name: Computer Science, color: "#ffbcaa", value: "50%" }
 
 #-------------------------------
 # Exprerience Section
@@ -99,22 +99,22 @@ skills:
 experience-title: Experience
 experience:
   - {
-      name: Junior UX Designer,
+      name: Part-time Math Instructor,
       icon: "icon-1.png",
-      date: "Jan 2007 - Feb 2009",
-      organization: "WEBEX",
+      date: "Aug 2021 - Feb 2022",
+      organization: "Middle School Math Academy",
     }
   - {
-      name: UX & UI Designer,
+      name: Military Driver,
       icon: "icon-2.png",
-      date: "Mar 2009 - Aug 2014",
-      organization: "AUGMEDIX",
+      date: "Feb 2023 - Aug 2024",
+      organization: "ROKA",
     }
   - {
-      name: Senior UI Designer,
+      name: Making AI Chatbot Project,
       icon: "icon-3.png",
-      date: "Sep 2014 - Present",
-      organization: "THEMEFISHER",
+      date: "Jan 2025 - Feb 2025",
+      organization: "HUFS",
     }
 
 #-------------------------------
@@ -123,24 +123,24 @@ experience:
 education-title: Education
 education:
   - {
-      name: Marters in UX Design,
-      date: "2006",
-      organization: "Masassusets Institute of Technology",
+      name: B.S. student in Mathematics ,
+      date: "2022~",
+      organization: "Hankuk University of Foreign Studies",
     }
   - {
-      name: Honours in Fine Arts,
-      date: "2004",
-      organization: "Harvard University",
+      name: High School Graduation,
+      date: "2020",
+      organization: "Seoul High School",
     }
   - {
-      name: Higher Secondary Certificat,
-      date: "2000",
-      organization: "Cardiff School",
+      name: Middle School Graduation,
+      date: "2017",
+      organization: "Guam Middle School",
     }
   - {
-      name: Secondary School Certificate,
-      date: "1998",
-      organization: "Cardiff School",
+      name: Elementary School Graduation,
+      date: "2014",
+      organization: "Guam Elementary School",
     }
 
 #-------------------------------
@@ -149,20 +149,20 @@ education:
 services-title: Services
 services:
   - {
-      name: UI Design,
-      icon: ti-palette,
+      name: Machine Learning,
+      icon: ti-panel,
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       active: ,# Add true to select section
     }
   - {
-      name: UX Design,
+      name: Deep Learning,
       icon: ti-vector,
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       active: true, # Add true to select section
     }
   - {
-      name: Interaction Design,
-      icon: ti-panel,
+      name: AI Solution,
+      icon: ti-palette,
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       active: ,# Add true to select section
     }
