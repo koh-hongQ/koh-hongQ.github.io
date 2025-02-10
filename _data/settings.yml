@@ -194,16 +194,17 @@ portfolio-label:
   - { title: "ILLUSTRATION", type: "illustration" }
 
 portfolio-items:
-  - image: "assets/images/portfolio/item-1.png"
-    url: "#"
+  - image: "personalwebpage.png"
+    url: "https://koh-hongq.github.io/Personal-Homepage/202200307.html"
     portfolio-type:
       - type: "design"
       - type: "illustration"
-
-  - image: "assets/images/portfolio/item-2.png"
-    url: "#"
-    portfolio-type:
       - type: "branding"
+
+  - image: "map.png"
+    url: "https://koh-hongq.github.io/Personal-Homepage/%EB%A7%9B%EC%A7%91%EC%99%B8%EB%8C%80%ED%86%B5%ED%95%A9.html"
+    portfolio-type:
+      - type: "design"
 
   - image: "assets/images/portfolio/item-3.png"
     url: "#"
