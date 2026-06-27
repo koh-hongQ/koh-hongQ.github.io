@@ -1,23 +1,840 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en-us">
 
-{% include hero-section.html %}
+<head>
 
-{% include about-section.html %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
 
-{% include skills-section.html %}
+  <meta name="author" content="Woojung Han">
+  <meta name="description" content="PhD Student">
+  <link rel="alternate" hreflang="en-us" href="/">
+  <meta name="theme-color" content="#2962ff">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  <link rel="stylesheet" href="./css/academic.css">
+  <link rel="alternate" href="./index.xml" type="application/rss+xml" title="Woojung Han">
+  <link rel="manifest" href="./index.webmanifest">
 
-{% include experience-section.html %}
 
-{% include education-section.html %}
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="canonical" href="/">
+  <meta property="twitter:card" content="summary">
+  <meta property="og:site_name" content="Woojung Han">
+  <meta property="og:url" content="/">
+  <meta property="og:title" content="Woojung Han">
+  <meta property="og:description" content="PhD Student"><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
+  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=false) shape:circle]"><meta property="og:locale" content="en-us">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "url": "/"
+}
+</script>
+  <title>Woojung Han</title>
 
-{% include services-section.html %}
+  <style>
+    .ul-papers li .img {
+      width: 210px;
+      max-width: 210px;
+      height: 140px;
+      padding-right: 10px;
+      vertical-align: top;
+    }
+    .ul-papers li .img img {
+      width: 200px;
+      height: 140px;
+      object-fit: contain;
+      border-radius: 10px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+      background: #ffffff;
+      padding: 4px;
+      box-sizing: border-box;
+      display: block;
+    }
+    .ul-papers .resources a {
+      display: inline-block;
+      padding: 4px 14px;
+      margin: 4px 6px 4px 0;
+      border-radius: 999px;
+      font-size: 0.82em;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease, color 0.18s ease;
+      line-height: 1.4;
+      box-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.14),
+        0 1px 2px rgba(0, 0, 0, 0.10),
+        inset 0 1px 0 rgba(255, 255, 255, 0.55);
+    }
+    .ul-papers .resources a:hover {
+      transform: translateY(-2px);
+      box-shadow:
+        0 8px 16px rgba(0, 0, 0, 0.20),
+        0 3px 6px rgba(0, 0, 0, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.35);
+    }
+    .ul-papers .resources a:active {
+      transform: translateY(0);
+      box-shadow:
+        inset 0 2px 4px rgba(0, 0, 0, 0.25);
+    }
+    .ul-papers .resources a.btn-paper {
+      background: linear-gradient(180deg, #ffffff 0%, #dfe3e6 100%);
+      color: #24292e;
+      border-color: #c5cad0;
+    }
+    .ul-papers .resources a.btn-paper:hover {
+      background: linear-gradient(180deg, #444d56 0%, #1b1f23 100%);
+      color: #ffffff;
+      border-color: #0d1015;
+    }
+    .ul-papers .resources a.btn-arxiv {
+      background: linear-gradient(180deg, #fff0ee 0%, #f8d3d0 100%);
+      color: #b31b1b;
+      border-color: #eaa8a5;
+    }
+    .ul-papers .resources a.btn-arxiv:hover {
+      background: linear-gradient(180deg, #d63634 0%, #a51717 100%);
+      color: #ffffff;
+      border-color: #8a1414;
+    }
+    .ul-papers .resources a.btn-code {
+      background: linear-gradient(180deg, #b8bfc8 0%, #8a94a3 100%);
+      color: #ffffff;
+      border-color: #6b7280;
+    }
+    .ul-papers .resources a.btn-code:hover {
+      background: linear-gradient(180deg, #9ca3af 0%, #6b7280 100%);
+      color: #ffffff;
+      border-color: #4b5563;
+    }
+    .ul-papers .description .title a {
+      color: #1a1a1a;
+      text-decoration: none;
+      background-image: linear-gradient(currentColor, currentColor);
+      background-size: 100% 1.5px;
+      background-repeat: no-repeat;
+      background-position: 0 100%;
+      transition: background-size 0.25s ease, color 0.2s ease;
+      padding-bottom: 1px;
+    }
+    .ul-papers .description .title a::after {
+      content: "↗";
+      font-size: 1.25em;
+      font-weight: 900;
+      color: #1f2937;
+      margin-left: 4px;
+      display: inline-block;
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+    .ul-papers .description .title a:hover {
+      color: #b31b1b;
+      background-size: 100% 2.5px;
+    }
+    .ul-papers .description .title a:hover::after {
+      color: #b31b1b;
+      transform: translate(2px, -2px);
+    }
+    .publication-filter {
+      position: relative;
+      margin: 14px 0 22px 0;
+      display: inline-flex;
+      gap: 4px;
+      padding: 5px;
+      background: #eef0f3;
+      border-radius: 12px;
+      box-shadow:
+        inset 0 1px 3px rgba(0, 0, 0, 0.08),
+        inset 0 0 0 1px rgba(0, 0, 0, 0.04);
+    }
+    .filter-slider {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      height: calc(100% - 10px);
+      width: 0;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.10),
+        0 1px 2px rgba(0, 0, 0, 0.06);
+      transition: left 0.32s cubic-bezier(0.4, 0, 0.2, 1),
+                  width 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+      z-index: 0;
+      pointer-events: none;
+    }
+    .pub-filter-btn {
+      position: relative;
+      z-index: 1;
+      padding: 7px 20px;
+      border: none;
+      background: transparent;
+      font-size: 0.9em;
+      font-weight: 600;
+      color: #6b7280;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: color 0.18s ease;
+      letter-spacing: 0.2px;
+    }
+    .pub-filter-btn:hover {
+      color: #1f2937;
+    }
+    .pub-filter-btn.active {
+      color: #111827;
+    }
+  </style>
+</head>
 
-{% include portfolio-section.html %}
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" >
 
-{% include testimonial-section.html %}
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
 
-{% include client-section.html %}
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
 
-{% include blog-section.html %}
+      <div id="search-box">
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="./">Woojung Han</a>
+    </div>
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="./">Woojung Han</a>
+    </div>
+
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+      <ul class="navbar-nav d-md-inline-flex">
+        <li class="nav-item">
+          <a class="nav-link " href="./#about" data-target="#about"><span>Home</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="./#news" data-target="#news"><span>News</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="./#experience" data-target="#experience"><span>Experiences</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="./#papers" data-target="#papers"><span>Publications</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="./#activities" data-target="#activities"><span>Activities</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="./#awards" data-target="#awards"><span>Awards &amp; Honors</span></a>
+        </li>
+
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+
+
+<span class="js-widget-page d-none"></span>
+
+  <section id="about" class="home-section wg-about   " style="padding: 30px 0 20px 0;" >
+    <div class="container">
+
+<div class="row">
+  <div class="col-12 col-lg-4">
+    <div id="profile">
+      <img class="avatar avatar-circle" src="./authors/admin/profile.png" alt="Avatar">
+      <div class="portrait-title">
+        <h2>Woojung Han</h2>
+        <h3>PhD Student</h3>
+
+        <h3>
+          <a href="https://micv.yonsei.ac.kr/home" target="_blank" rel="noopener">
+          <span><b>MICV Lab, Yonsei University</b></span>
+          </a>
+        </h3>
+        <h3>Incoming Student Researcher @ <b><span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC05">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span></b></h3>
+      </div>
+
+      
+      <td>
+      <br>
+          <a href="cv/260222.pdf"><b>CV</b></a>
+        | <a href="https://scholar.google.com/citations?hl=ko&user=tLok7p8AAAAJ"><b>Google Scholar</b></a>
+        | <a href="https://github.com/dnwjddl"><i class="fa fa-github"></i></a>
+        | <a href="https://www.linkedin.com/in/woojung-han/"><i class="fa fa-linkedin-square"></i></a>
+        | <a href="https://x.com/woojung0305"><i class="fa fa-twitter-square"></i></a>
+      <br>
+      <br>
+      </td>
+
+    </div>
+  </div>
+  <div class="col-12 col-lg-8">
+
+    
+<br>
+<!-- <p> <strong>Hello, Welcome :)</strong></p> </p> -->
+<p>  I am a 5th-year PhD student at
+<a href="https://micv.yonsei.ac.kr/home" target="_blank" rel="noopener"><strong>Yonsei University</strong></a>, advised by professor <a href="https://micv.yonsei.ac.kr/seongjae" target="_blank" rel="noopener"><strong>Seong Jae Hwang</strong></a> in the Medical Imaging & Computer Vision Lab. I am also starting as a Student Researcher at <a href="https://research.google/" target="_blank" rel="noopener"><strong>Google</strong></a> (Mountain View, CA Office), working on <b>Efficient Video Representation Learning</b>, hosted by <a href="https://research.google/people/105588/" target="_blank" rel="noopener"><strong>Li Zhang</strong></a>.</p>
+<p>I am broadly interested in learning algorithms that bridge <b>visual understanding</b> and <b>multi-modal generative modeling</b>, with a particular focus on label-efficient semantic segmentation, medical-image foundation models and multimodal generation, including image and video generation.</p>
+
+
+    <div class="row">
+
+      <div class="col-md-6">
+        <h3>Contact</h3>
+        <ul class="ul-contact fa-ul">
+          <li>          
+            <i class="fa-li fas fa-envelope"></i>
+            <div class="description">
+              <p class="course">dnwjddl@yonsei.ac.kr</p>
+<!--               <p class="course">chanyoung@ieee.org</p> -->
+            </div>
+          </li>       
+          <li>          
+            <i class="fa-li fas fa-map-marker"></i>
+            <div class="description">
+              <p class="course">Engineering Research Park, Yonsei University, Seoul, Republic of Korea</p>
+            </div>
+          </li>       
+        </ul>        
+      </div>
+
+      <div class="col-md-6">
+        <h3>Education</h3>
+        <ul class="ul-edu fa-ul">
+
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">PhD in Computer Science, 2022~Present</p>
+              <p class="institution">Yonsei University, Seoul</p>
+            </div>
+          </li>
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">BS in Human Intelligence and Information Engineering, 2017~2022</p>
+              <p class="institution">Sangmyung University, Seoul</p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  <section id="news" class="home-section wg-blank   " style="padding: 20px 0 20px 0;" >
+    <div class="container">
+
+<div class="row">  
+    <div class="col-lg-12">
+      <h3>Recent News&#127881;</h3>      
+      
+<ul>
+  <li> [July 2026] 🎉 Starting as a <b>Student Researcher</b> at <b style="font-size:1.15em"><span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC05">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span></b>, Mountain View Office!</li>
+  <li> [May 2026] Honored to be recognized as a <b>Silver Reviewer</b> for <b>ICML 2026</b>!</li>
+  <li> [Apr 2026] 🎉 <b>Two papers</b> have been accepted to <b>ICML 2026</b>!</li>
+  <li> [Nov 2025] Starting a research collaboration with <a href="https://research.nvidia.com/person/min-hung-chen" target="_blank" rel="noopener"><strong>Min-Hung Chen</strong></a> (NVIDIA)! </li>
+  <li> [Sep 2025] 🎉 Our paper <i>TORA</i> has been accepted to <b>NeurIPS 2025.</b></li>
+  <li> [Aug 2025] 🎓 Completed PhD coursework at Yonsei University.</li>
+  <li> [July 2025] Starting a research collaboration with <a href="https://fuenyang1127.github.io/" target="_blank" rel="noopener"><strong>Fu-En Yang</strong></a> (NVIDIA)! </li>
+  <li> [May 2025] 🎉 <b>Two papers</b> have been <b>EARLY ACCEPTED</b> (&lt; 9%) to <b>MICCAI 2025</b>!</li>
+  <li> [Feb 2025] 🎉 <b>Two papers</b> have been accepted to <b>CVPR 2025</b>!</li>
+  <li> [Feb 2025] <i>EAGLE</i> (CVPR 2024 Highlight) won <b>Best Academic Paper Award</b> at Yonsei University Fall 2024.</li>
+  <li> [Nov 2024] <i>CoBra</i> (PR Journal) awarded the ARF funding Idea Incubating Initiative at Yonsei University in Fall 2024.</li>
+  <li> [Sep 2024] Our paper <i>CXRL</i>🩻 has been selected as a <b>Spotlight</b>🔦(&lt; 3.4%) at <b>MICCAI 2024</b>!</li>
+  <li> [Aug 2024] 🎉 One paper accepted for <b>Pattern Recognition Journal</b> (Impact Factor = 7.5)</li>
+  <li> [May 2024] 🎉 One paper has been <b>EARLY ACCEPTED</b> (&lt; 11%) to <b>MICCAI 2024</b>!</li>
+  <li> [Mar 2024] 🎉 One paper has been accepted to <b>CVPR 2024</b> as a <b>Highlight</b>💫(&lt; 2.8%)!</li>
+  <li> [Mar 2022] 🎓 Joined MICV Lab at Yonsei University for my Ms/PhD Program.</li>
+</ul>
+    </div>
+</div>
+    </div>
+  </section>
+
+<section id="experience" class="home-section wg-blank   " style="padding: 10px 0 10px 0;" >
+<div class="container">
+<div class="row">
+    <div class="col-lg-12">
+    <h1>Research Experiences</h1>
+<ul>
+
+<li> <div style="float:left"><b>Google Research</b>, Mountain View, CA</div><div style="float:right">July 2026 - Present </div> <br>
+    Student Researcher (Hosted by Li Zhang) <br>
+</li>
+<li> <div style="float:left"><b>Medical Imaging & Computer Vision Lab</b>, Yonsei University, Seoul</div><div style="float:right">Mar 2022 - Present </div> <br>
+    Graduate Student Researcher (Advisor: Seong Jae Hwang) <br>
+</li>
+<li> <div style="float:left"><b>Algorithm Machine Intelligence Lab</b>, POSTECH, Seoul</div><div style="float:right">June 2021 - Aug 2021 </div> <br>
+    Undergraduate Research Intern (Advisor: Tae-Hyun Oh) <br>
+</li>
+ <li> <div style="float:left"><b>Computer Vision Lab</b>, Korea University, Seoul</div><div style="float:right">Mar 2021 - June 2021 </div> <br>
+    Undergraduate Research Intern (Advisor: Sangpil Kim) <br>
+</li>
+  <li> <div style="float:left"><b>Pattern Recognition Lab</b>, Sangmyung University, Seoul</div><div style="float:right">Sep 2018 - Nov 2020 </div> <br>
+    Undergraduate Research Intern (Advisor: Eui Chul Lee) <br>
+</li>
+</ul>
+    </div>
+</div>
+    </div>
+  </section>
+
+  <section id="papers" class="home-section wg-papers   " style="padding: 20px 0 20px 0;" >
+    <div class="container">
+      
+<div class="row">
+  
+    <div class="col-lg-12">
+      <h1>Publications</h1>
+      <div class="publication-filter">
+        <span class="filter-slider" aria-hidden="true"></span>
+        <button class="pub-filter-btn active" data-filter="all" type="button">All</button>
+        <button class="pub-filter-btn" data-filter="first" type="button">First Author</button>
+      </div>
+    </div>
+    <div class="row">
+        <ul class="ul-papers">
+          <li class="first-author">
+            <div class="img">
+              <img src="cv/phaselock_fig1.png" class="img-responsive" alt="" >
+            </div>
+            <div class="description">
+              <p class="title"><a href="https://dnwjddl.github.io/phaselock" target="_blank" rel="noopener">Physics in 2-Steps: Locking Motion Priors Before Visual Refinement Erases Them</a></p>
+              <p class="authors"><b>Woojung Han</b>, Seil Kang, Youngjun Jun, Min-Hung Chen, Fu-En Yang, Seong Jae Hwang</p>
+              <p class="venue">ICML 2026</p>
+              <p class="authors"><span style="color:#dc143c">Short version at "Foundations of Deep Generative Models" Workshop @ ICML 2026</span></p>
+              <p class="resources">
+                <a class="btn-arxiv" href="https://arxiv.org/abs/2606.06361">arXiv</a>
+                <a class="btn-code" href="https://github.com/dnwjddl/phaselock/tree/main/code">code</a>
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div class="img">
+              <img src="cv/vstream_fig1.png" class="img-responsive" alt="" >
+            </div>
+            <div class="description">
+              <p class="title"><a href="https://seilk.github.io/vstream/" target="_blank" rel="noopener">Real-Time Visual Attribution Streaming in Thinking Model</a></p>
+              <p class="authors">Seil Kang, <b>Woojung Han</b>, Junhyeok Kim, Jinyeong Kim, Youngeun Kim, Seong Jae Hwang</p>
+              <p class="venue">ICML 2026 <span style="color:#dc143c">Spotlight</span> (Acceptance Rate &lt; 2.2%)</p>
+              <p class="authors"><span style="color:#dc143c">Short version at "Scalable Learning and Optimization for Efficient Multimodal AI Agents (SCALE)" Workshop @ ICML 2026</span></p>
+              <p class="resources">
+                <a class="btn-arxiv" href="https://arxiv.org/pdf/2604.16587">arXiv</a>
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div class="img">
+              <img src="cv/map.png" class="img-responsive" alt="" >
+            </div>
+            <div class="description">
+              <p class="title">Interpretable Motion-Attentive Maps: Spatio-Temporally Localizing Concepts in Video Diffusion Transformers</p>
+              <p class="authors">Youngjun Jun, Seil Kang, <b>Woojung Han</b>, Seong Jae Hwang</p>
+              <p class="venue">CVPR 2026 <span style="color:#dc143c">Highlight</span> (Acceptance Rate &lt; 3.6%)</p>
+              <p class="resources">
+                <a class="btn-arxiv" href="https://arxiv.org/abs/2603.02919">arXiv</a>
+              </p>
+            </div>
+          </li>
+
+            <li class="first-author">
+            <div class="img">
+              <img src="cv/tora.png" class="img-responsive" alt="" >
+            </div>
+            <div class="description">
+              <p class="title">Rare Text Semantics Were Always There in Your Diffusion Transformer</p>
+              <p class="authors"><b>Woojung Han*</b>,Seil Kang*, Dayun Ju, Seong Jae Hwang</p>
+              <p class="venue">NeurIPS 2025</p>
+              <p class="resources">
+                <a class="btn-paper" href="https://openreview.net/pdf?id=tkV3n52mQO">NeurIPS</a>
+                <a class="btn-arxiv" href="https://arxiv.org/pdf/2510.03886">arXiv</a>
+                <a class="btn-code" href="https://github.com/dnwjddl/tora">code</a>
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="img">
+              <img src="cv/PRETI.png" class="img-responsive" alt="" >
+            </div>
+            <div class="description">
+              <p class="title">PRETI: Patient-Aware Retinal Foundation Model via Metadata-Guided Representation Learning</p>
+              <p class="authors">Yeonkyung Lee, <b>Woojung Han</b>, Youngjun Jun, Hyeonmin Kim, Jungkyung Cho, Seong Jae Hwang</p>
+              <p class="venue">MICCAI 2025 <span style="color:#2962ff">EARLY ACCEPTED</span></p>
+              <p class="resources">
+                <a class="btn-paper" href="https://papers.miccai.org/miccai-2025/0715-Paper0634.html">MICCAI</a>
+                <a class="btn-arxiv" href="https://arxiv.org/pdf/2505.12233">arXiv</a>
+                <a class="btn-code" href="https://github.com/MICV-yonsei/PRETI">code</a>
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="img">
+              <img src="cv/watermarking.png" class="img-responsive" alt="" >
+            </div>
+            <div class="description">
+              <p class="title">Pathology-Aware Adaptive Watermarking for Text-Driven Medical Image Synthesis</p>
+              <p class="authors">Chanyoung Kim*, Dayun Ju*, Jinyeong Kim, <b>Woojung Han</b>, Roberto Alcover-Couso, Seong Jae Hwang</p>
+              <p class="venue">MICCAI 2025 <span style="color:#2962ff">EARLY ACCEPTED</span></p>
+              <p class="resources">
+                <a class="btn-paper" href="https://papers.miccai.org/miccai-2025/0673-Paper0428.html">MICCAI</a>
+                <a class="btn-arxiv" href="https://arxiv.org/pdf/2503.08346">arXiv</a>
+              </p>
+            </div>
+          </li>
+                  <li class="first-author">
+            <div class="img">
+              <img src="cv/storm.gif" class="img-responsive" alt="" >
+            </div>
+            <div class="description">
+              <p class="title"><a href="https://micv-yonsei.github.io/storm2025/" target="_blank" rel="noopener">Spatial Transport Optimization by Repositioning Attention Map for Training-Free Text-to-Image Synthesis</a></p>
+              <p class="authors"><b>Woojung Han</b>, Yeonkyung Lee, Chanyoung Kim, Kwanghyun Park, Seong Jae Hwang</p>
+              <p class="authors"><span style="color:#dc143c">Short version at "3rd Workshop on Generative Models for Computer Vision" Workshop @ CVPR 2025</span></p>
+              <p class="venue">CVPR 2025</p>
+              <p class="resources">
+                <a class="btn-paper" href="https://openaccess.thecvf.com/content/CVPR2025/html/Han_Spatial_Transport_Optimization_by_Repositioning_Attention_Map_for_Training-Free_Text-to-Image_CVPR_2025_paper">CVPR</a>
+                <a class="btn-arxiv" href="https://arxiv.org/pdf/2503.22168">arXiv</a>
+                <a class="btn-code" href="https://github.com/MICV-yonsei/STORM">code</a>
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="img">
+              <img src="cv/audi.gif" class="img-responsive" alt="" >
+            </div>
+            <div class="description">
+              <p class="title"><a href="https://micv-yonsei.github.io/cass/" target="_blank" rel="noopener">Distilling Spectral Graph for Object-Context Aware Open-Vocabulary Semantic Segmentation</a></p>
+              <p class="authors">Chanyoung Kim, Dayun Ju, <b>Woojung Han</b>, Ming-Hsuan Yang, Seong Jae Hwang</p>
+              <p class="venue">CVPR 2025</p>
+              <p class="resources">
+                <a class="btn-paper" href="https://openaccess.thecvf.com/content/CVPR2025/html/Kim_Distilling_Spectral_Graph_for_O[…]ware_Open-Vocabulary_Semantic_Segmentation_CVPR_2025_paper">CVPR</a>
+                <a class="btn-arxiv" href="https://arxiv.org/pdf/2411.17150">arXiv</a>
+              </p>
+            </div>
+          </li>
+
+
+          <li class="first-author">
+            <div class="img">
+              <img src="https://github.com/MICV-yonsei/EAGLE/raw/main/img/mainfigure.png" class="img-responsive" alt="" >
+            </div>
+            <div class="description">
+              <p class="title"><a href="https://micv-yonsei.github.io/eagle2024/" target="_blank" rel="noopener">EAGLE🦅: Eigen Aggregation Learning for Object-Centric Unsupervised Semantic Segmentation</a></p>
+              <p class="authors"><b>Woojung Han*</b>, Chanyoung Kim*, Dayun Ju, Seong Jae Hwang</p>
+              <p class="venue">CVPR 2024 <span style="color:#dc143c">Highlight</span> (Acceptance Rate < 2.8%)</p>
+              <p class="authors"><span style="color:#dc143c">Short version at "Causal and Object-Centric Representations for Robotics" Workshop @ CVPR 2024</span></p>
+              <p class="resources">
+                <a class="btn-paper" href="https://openaccess.thecvf.com/content/CVPR2024/html/Kim_EAGLE_Eigen_Aggregation_Learning_for_Object-Centric_Unsupervised_Semantic_Segmentation_CVPR_2024_paper.html">CVPR</a>
+                <a class="btn-arxiv" href="https://arxiv.org/pdf/2403.01482.pdf">arXiv</a>
+                <a class="btn-code" href="https://github.com/MICV-yonsei/EAGLE">code</a>
+              </p>
+            </div>
+          </li>
+
+          <li class="first-author">
+            <div class="img">
+              <img src="https://micv-yonsei.github.io/cxrl2024/static/images/result1.png" class="img-responsive" alt="" >
+            </div>
+            <div class="description">
+              <p class="title"><a href="https://micv-yonsei.github.io/cxrl2024/" target="_blank" rel="noopener">Advancing Text-Driven Chest X-Ray Generation with Policy-Based Reinforcement Learning</a></p>
+              <p class="authors"><b>Woojung Han*</b>, Chanyoung Kim*, Dayun Ju, Yumin Shim, Seong Jae Hwang</p>
+              <p class="venue">MICCAI 2024 <span style="color:#2962ff">EARLY ACCEPTED</span> <span style="color:#dc143c">Spotlight</span> (Acceptance Rate < 3.4%)</p>
+              <p class="resources">
+                <a class="btn-paper" href="https://papers.miccai.org/miccai-2024/053-Paper0165.html">MICCAI</a>
+                <a class="btn-arxiv" href="https://arxiv.org/abs/2403.06516">arXiv</a>
+                <a class="btn-code" href="https://github.com/MICV-yonsei/CXRL">code</a>
+              </p>
+            </div>
+          </li>
+
+          
+
+          <li class="first-author">
+            <div class="img">
+              <img src="https://github.com/user-attachments/assets/b5e9ffcd-b953-448c-8685-dacb63410f7c" class="img-responsive" alt="" >
+            </div>
+          <div class="description">
+            <p class="title"><a href="https://micv-yonsei.github.io/cobra2024/" target="_blank" rel="noopener">CoBra: Complementary Branch Fusing Class and Semantic Knowledge for Robust Weakly Supervised Semantic
+Segmentation</a></p>
+            <p class="authors"><b>Woojung Han</b>, Seil Kang, Kyobin Choo, Seong Jae Hwang</p>
+            <p class="venue">Pattern Recognition (Impact Factor: 7.5)</p>
+              <p class="resources">
+            <p class="resources">
+                <a class="btn-paper" href="https://www.sciencedirect.com/science/article/pii/S0031320324006733">PR</a>
+                <a class="btn-arxiv" href="https://arxiv.org/pdf/2403.08801">arXiv</a>
+                <a class="btn-code" href="https://github.com/MICV-yonsei/Cobra">code</a>
+            </p>
+          </div>
+        </li>
+
+        </ul>      
+    </div>  
+</div>
+    </div>
+  </section>
+
+  <section id="activities" class="home-section wg-blank   " style="padding: 20px 0 20px 0;" >
+    <div class="container">
+
+<div class="row">  
+    <div class="col-lg-12">
+      <h1>Academic Activities</h1>  
+<!--       <h2 id="reviewer">Organizing Committees</h2>
+      <ul>
+        <li> MICCAI Student Board - Local Student Liaison Officer
+          <ul>
+            <li>Organizing workshops, webinars, and conference events for MICCAI 2025</li>
+          </ul>
+        </li>
+      </ul> -->
+      <h2 id="reviewer">Reviewer</h2>
+      <p>CVPR, ICML, NeurIPS, WACV, BMVC, ECCV</p>
+      <h2 id="reviewer">Certifications</h2>
+        <ul>
+          <li>Summer Program at the University of Southern California (Aug 2023)</li>
+          <li>YONSEI Medical Scientist Program (July 2023)</li>
+          <li>Tensorflow Developer Certificate (July 2022)</li>
+        </ul>
+ 
+      <h2 id="reviewer">Teaching Experience</h2>
+        <ul>
+          <li> TA: Yonsei University (Mar 2022 ~ Present)</li>
+          <li> TA: KT AIVLE (Feb 2022) </li>
+          <li> TA: NAVER + MODULABS </li>
+          <li> Lecturer: Samsung Electronics </li>
+          <li> TA: LG Academy AI Camp </li>
+        </ul>
+
+    </div>
+</div>
+    </div>
+  </section>
+
+<section id="awards" class="home-section wg-blank   " style="padding: 20px 0 20px 0;" >
+    <div class="container">
+
+<div class="row">  
+    <div class="col-lg-12">
+      <h1>Awards &amp; Honors</h1>      
+      
+<ul>
+  <li> Silver Reviewer for ICML 2026</li>
+  <li> Best Academic Paper Award at Yonsei University Fall 2024</li>
+  <li> Graduation Project Dec 2021 </li>
+  <li> MAIC Surgical Instruments Segmentation Dec 2021 </li>
+  <li> Korea SW Central University Hackton Feb 2021 </li>
+  <li> SM AI Competition (2nd, 4rd Prize) Dec 2020 </li>
+</ul>
+    </div>
+</div>
+    </div>
+  </section>
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    <script>const code_highlighting = false;</script>
+    <script>const isSiteThemeDark = false;</script>
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+
+    <script src="/js/academic.min.a8d7005002cb4a052fd6d721e83df9ba.js"></script>
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+    .
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function() {
+    function init() {
+      var btns = document.querySelectorAll('.pub-filter-btn');
+      var items = document.querySelectorAll('.ul-papers > li');
+      var slider = document.querySelector('.filter-slider');
+
+      function updateSlider(animate) {
+        var activeBtn = document.querySelector('.pub-filter-btn.active');
+        if (!slider || !activeBtn) return;
+        if (!animate) {
+          slider.style.transition = 'none';
+        }
+        slider.style.width = activeBtn.offsetWidth + 'px';
+        slider.style.left = activeBtn.offsetLeft + 'px';
+        if (!animate) {
+          // Force reflow then re-enable transition
+          slider.offsetWidth;
+          slider.style.transition = '';
+        }
+      }
+
+      btns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          btns.forEach(function(b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          updateSlider(true);
+          var filter = btn.getAttribute('data-filter');
+          items.forEach(function(li) {
+            if (filter === 'all' || li.classList.contains('first-author')) {
+              li.style.display = '';
+            } else {
+              li.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      updateSlider(false);
+      window.addEventListener('resize', function() { updateSlider(true); });
+      window.addEventListener('load', function() { updateSlider(false); });
+      if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(function() { updateSlider(false); });
+      }
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+  })();
+</script>
+
+</body>
+</html>
